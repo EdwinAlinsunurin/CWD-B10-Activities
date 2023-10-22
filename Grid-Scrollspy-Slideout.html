@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome icon-->
+    <script src="https://kit.fontawesome.com/7e67f115fd.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <link rel="stylesheet" href="style-Grid.css">
+    <title>Grid</title>
+</head>
+<body>
+        <br>
+        <nav class="top-nav">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="row">
+                        <div class="col s12">
+                            <a class="brand-logo red-text text-lighten-2" style="font-size:60px">Grid</a>
+                            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons red-text text-lighten-2" style="font-size: 30px;">menu</i></a>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </nav>
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view" style="position:relative; height: 200px;">
+                    <div class="background">
+                        <img src="Images/Background_Img.jpg" alt="" class="responsive-img">
+                    </div>
+                    <br>
+                    <div class="container">
+                        <a href=""><img src="Images/img2.jpg" alt="" class="circle"></a>
+                        <a href=""><span class="white-text name">John Doe</span></a>
+                        <a href=""><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div>
+                </div>                        
+            </li>
+            <nav>
+                <div class="nav-wrapper white">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+
+
+
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            <div class="divider"></div>
+            <li><a href="" class="dropdown-trigger" data-target="sideoutdropdown">Sites:<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        <ul id="sideoutdropdown" class="dropdown-content">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Google</a></li>
+            <li><a href="">Twitter</a></li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m9">
+                <p>We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.</p>
+                <!--Scrollspy -->
+                <h3 id="Container" class="section scrollspy" >Container</h3>
+                <p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The <b>container</b> class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
+                <p class="flow-text">Demo</p>
+                <p>Try the button below to see what the page looks like without containers.</p>
+                <a href="" class="btn">TURN OFF CONTAINERS</a>
+                <br><br>
+                <img src="Images/CaptureImg1.JPG" alt="" class="responsive-img">
+                <p>To add a container just put your content inside a &lt/div&gt tag with a <b>container </b>class. Here's an example of how your page might be set up.</p>
+                <!--Scrollspy -->
+                <h3 id="Introduction" class="section scrollspy">Introduction</h3>
+                <p>Take a look at this section to quickly understand how the grid works!</p>
+                <p class="flow-text">12 Columns</p>
+                <p>Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.</p>
+                <div class="row">
+                    <div class="col s2 m6 l4 card-panel black"><p class="flow-text">1<p></div>
+                    <div class="col s2 m6 l4 card-panel black"><p class="flow-text">2<p></div>  
+                    <div class="col s2 m6 l4 card-panel black"><p class="flow-text">3<p></div>    
+                    <div class="col s2 m6 l4 card-panel black"><p class="flow-text">4<p></div>
+                    <div class="col s2 m6 l4 card-panel orange"><p class="flow-text">5<p></div>
+                    <div class="col s2 m6 l4 card-panel orange"><p class="flow-text">6<p></div>
+                    <div class="col s2 m6 l4 card-panel orange"><p class="flow-text">7<p></div>
+                    <div class="col s2 m6 l4 card-panel orange"><p class="flow-text">8<p></div>
+                    <div class="col s2 m6 l4 card-panel blue"><p class="flow-text">9<p></div>
+                    <div class="col s2 m6 l4 card-panel blue"><p class="flow-text">10<p></div>
+                    <div class="col s2 m6 l4 card-panel blue"><p class="flow-text">11<p></div>
+                    <div class="col s2 m6 l4 card-panel blue"><p class="flow-text">12<p></div>
+                </div>
+                <p>To get a feel of how the grid is used in HTML, take a look at the code below which will produce a similar result to the one above.</p>
+                <div class="card-panel black-text">
+                    <p>Refer to Documentation <br>https://materializecss.com/grid.html </p>
+                </div>
+                <p>
+                    Note: For now, just know that the s1 stands for small-1 which in plain English means "1 column on small screens".
+                </p>
+                <p class="flow-text">Columns live inside Rows</p>
+                <p>Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns</p>
+                <div class="row">
+                    <div class="col s12 card-panel deep-orange">col s12</div>
+                    <div class="col s6 card-panel deep-orange">col s6</div>
+                    <div class="col s6 card-panel deep-orange">col s6</div>
+                </div>
+                <!--Scrollspy -->
+                <h3 id="Offsets" class="section scrollspy">Offsets</h3>
+                <p>To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by.s</p>
+                <div class="row">
+                    <div class="col s12 card-panel deep-orange">col s12</div>
+                    <div class="col s6 offset-s6 card-panel deep-orange">col s6 offset-s6</div>
+                </div>
+                <!--Scrollspy -->
+                <h3 id="Push&Pull" class="section scrollspy">Push and Pull</h3>
+                <p>
+                    You can easily change the order of your columns with push and pull. Simply add push-s2 or pull-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to push or pull by.
+                </p>
+                <div class="row">
+                    <div class="col s3 push-s9 m3 card-panel deep-orange"><span class="flow-text">col s3 push-s9 9 Column</span></div>
+                    <div class="col s9 pull-s3 m9 card-panel deep-purple"><span class="flow-text">col s9 pull-s3 3 Column</span></div>
+                </div>
+                <!--Scrollspy -->
+                <h3 id="CreateLayout" class="section scrollspy">Creating Layouts</h3>
+                <p>Here we will show you how to create some commonly used layouts with our grid system. Hopefully these will get you more comfortable with laying out elements. To keep these demos simple, the ones here will not be responsive.</p>
+                <div class="row">
+                    <div class="col s6">
+                        <p class="flow-text">Section</p>
+                        <p>The section class is used for simple top and bottom padding. Just add the section class to your div's containing large blocks of content.</p>
+                    </div>
+                    <div class="col s6">
+                        <p class="flow-text">Divider</p>
+                        <p>Dividers are 1 pixel lines that help break up your content. Just add the divider to a div in between your content.</p>
+                    </div>
+                </div>
+                <div class="flow-text">Example Sections and Dividers</div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5>Section 1</h5>
+                    <p>Stuff</p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5>Section 2</h5>
+                    <p>Stuff</p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5>Section 3</h5>
+                    <p>Stuff</p>
+                </div>
+                <div class="flow-text">Example Promotion Table</div>
+                <p>If we want 3 divs that are equal size, we define the divs with a width of 4-columns, as 4+4+4 nicely adds up to 12. Inside those divs, we can put our content. Take our front page content for example. We've modified it slightly for the sake of this example.</p>
+                <br>
+                <div class="row">
+                    <div class="col s4 center">
+                        <a href=""><i class="fa-solid fa-bolt-lightning large custom-icon"></i></a>
+                        <h5 class="center black-text"><b>Speeds up development</b></h5>
+                        <p>We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+                    </div>
+                    <div class="col s4 center">
+                        <a href=""><i class="fa-solid fa-user-group large custom-icon"></i></a>
+                        <h5 class="center black-text"><b>User Experience Focused</b></h5>
+                        <p>By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+                    </div>
+                    <div class="col s4 center">
+                        <a href=""><i class="fa-solid fa-gear large custom-icon"></i></a>
+                        <h5 class="center black-text"><b>Easy to work with</b></h5>
+                        <p>We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!--Other Column-->
+            <br>
+            <div class="col s3 m3 col-stock hide-on-med-and-down">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img class="responsive-img custom-img2"  src="Images/CaptureImg2.JPG" alt="">
+                        </li>
+                        <li>
+                            <img class="responsive-img custom-img2"  src="Images/CaptureImg3.JPG" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <br>
+                <a href="" class="custom-text1">Get 10 Free Images <br>
+                From Adobe Stock.<br>Start Now.</a>
+                <br>
+                <a href="" class="custom-text2">ads via Carbon</a>
+                <br><br><br>
+                <div>
+                    <ul class="section table-of-contents">
+                        <li><a href="#Container">Container</a></li>
+                        <li><a href="#Introduction">Introduction</a></li>
+                        <li><a href="#Offsets">Offsets</a></li>
+                        <li><a href="#Push&Pull">Push and Pull</a></li>
+                        <li><a href="#CreateLayout">Creating Layouts</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+
+
+
+
+
+    <div style="height: 1000px;"></div>
+
+
+    <!--to speed up efficient access from  other website-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Initialize Scrollspy-->
+    <script>
+        $('.document').ready(function() {
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+    <!--Initialize Slider-->
+    <script>
+        $('.document').ready(function() {
+            $('.slider').slider({
+                height: 90,
+                indicators:false
+            });
+        });
+    </script>
+    <!-- Side Nav Trigger-->
+    <script>
+        $('.document').ready(function() {
+            $('.sidenav').sidenav();
+        });
+    </script>
+    <!-- Side Nav Trigger-->
+    <script>
+        $('.document').ready(function() {
+            $('.dropdown-trigger').dropdown();
+        });
+    </script>
+</body>
+</html>

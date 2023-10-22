@@ -1,0 +1,29 @@
+h1,h2,h3,h4,h5,h6 {
+    color:#e57373;
+    font-weight: 200;
+}
+p {
+    color:#424242;
+}
+/* for FAB and Modal */
+.custom-header {
+    color:white;
+    font-weight: bold;
+}
+.custom2-header {
+    color:white;
+}
+.copy-button {
+    border-radius: 40px;
+    height: 40px;
+    line-height: 30px;
+    width: 100px;
+    background-color:#68be6c;   
+    text-align: center;
+    font-size: 17px;
+    color:black;    
+}
+label {
+    margin-right: 10px;
+}
+

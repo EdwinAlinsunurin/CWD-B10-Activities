@@ -1,0 +1,41 @@
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 200;
+    color: #e57373;
+}
+.card-panel {
+    text-align:center;
+    border: 1px solid #eee;
+    color: white;
+}
+
+.col-stock{
+    position: sticky;
+    top:0px;
+}
+.custom-text1 {
+    font-weight: 100;
+    color: #e57373;
+    font-size: 13px;
+}
+.custom-text2 {
+    font-weight: 100;
+    color: #e57373;
+    font-size: 10px;
+    margin-left: 20px;
+}
+.custom-img2{
+    margin: 5px 0px 0px;
+}
+.custom-icon {
+    color:red;
+}
+/*   Navbar top*/
+.brand-logo{
+    font-weight: 200;
+}
+.top-nav{
+    background-color: transparent;
+    box-shadow:none;
+}
+
+

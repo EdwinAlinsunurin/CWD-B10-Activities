@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome icon-->
+    <script src="https://kit.fontawesome.com/7e67f115fd.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css"> 
+    <title>Dashboard-Admin</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo">Home</a>
+                    <a href="" class="sidenav-trigger" data-target="slide-out">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <ul class="right">
+                        <li><a href=""><i class="fa-solid fa-gear"></i></a></li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="">Buy Now!</a></li>
+                        <li><a href=""><i class="fa-solid fa-bell"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <ul class="sidenav" id="slide-out">
+            <li><a class="pages">Admin</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="pages">PAGES</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="charts" href="#!">CHARTS</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="table" href="#!">TABLES</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="calendar" href="#!">CALENDAR</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="Headers" href="#!">HEADERS</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="Account" href="#!">ACCOUNT</a></li>
+            <li><div class="divider"></div></li>           
+        </ul>
+        <!--- only need to choose if mobile doemo or slide out-->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="">Buy Now!</a></li>
+            <li><a href="">Notification</a></li>
+            <li><a href="">Setting</a></li>
+        </ul>
+    </div>
+    <!--- DashBoard Area-->  
+    <div class="container">
+        <h3>Dashboard</h3>
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <span>Revenue</span>
+                    <h5>$12,476.00</h5>
+                    <span><i class="fa-solid fa-angle-up"></i></span><span> 12%</span>
+                    <img src="Images/blueImg.JPG" alt="" class="responsive-img" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <span>Clicks</span>
+                    <h5>11,893</h5>
+                    <span><i class="fa-solid fa-angle-up"></i></span><span> 8%</span>
+                    <img src="Images/yellowImg.JPG" alt="" class="responsive-img" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <span>Users</span>
+                    <h5>230,648</h5>
+                    <span><i class="fa-solid fa-angle-down"></i></span><span> 2%</span>
+                    <img src="Images/pinkImg.JPG" alt="" class="responsive-img" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+            <div class="col s12 m6 l3" >
+                <div class="card-panel">
+                    <span>Conversion Rate</span>
+                    <h5>0.24%</h5>
+                    <span><i class="fa-solid fa-angle-down"></i></span><span> 9%</span>
+                    <img src="Images/greenImg.JPG" alt="" class="responsive-img" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s4"><a href="#test1" class="black-text">Revenue</a></li>
+                    <li class="tab col s4"><a href="#test2" class="black-text">Users</a></li>
+                    <li class="tab col s4"><a href="#test4" class="black-text">CTR</a></li>
+                </ul>
+            </div>
+            <div id="test1" class="col s12">
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            </div>
+            <div id="test2" class="col s12">  
+                <div id="chart2Container" style="height: 300px; width: 100%;"></div>                           
+            </div>
+            <div id="test4" class="col s12">
+                <div id="chart3Container" style="height: 300px; width: 100%;"></div>  
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div style="height: 1000px;"></div>
+    <!--to speed up efficient access from  other website-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Canvan JS -->
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <!-- JS file lookup-->
+    <script src="js/chart.js"></script>
+    <!--Initialize-->
+    <script>
+        $(document).ready(function(){   
+            $('.sidenav').sidenav();      /* Navbar */
+            $('.tabs').tabs();      /* Tabs */
+        });
+    </script>
+</body>
+</html>

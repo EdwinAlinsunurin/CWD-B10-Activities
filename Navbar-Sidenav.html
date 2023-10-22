@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Font Awesome-->
+        <script src="https://kit.fontawesome.com/7e67f115fd.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome cdnjs-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Material Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="style-navbar.css">
+    <title>Navbar & Sidenav</title>
+</head>
+
+
+
+<body>
+    <!-- Fixed Navbar-->
+    <div class="navbar-fixed blue">
+        <nav class="nav-extended blue">
+            <div class="container">
+                <div class=" nav-wrapper">
+                    <a href="https://www.figma.com/" class="brand-logo" target="blank"><i class="fa-brands fa-figma"></i>Figma</a>
+                    <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://www.figma.com/design/" target="blank">Products</a></li>
+                        <li><a href="https://www.figma.com/enterprise/" target="blank">Overview</a></li>
+                        <li><a href="https://www.figma.com/templates/" target="blank">Resources</a></li>
+                        <li><a href="" class="dropdown-trigger" data-target="dropdown1"><i class="fa-solid fa-circle-chevron-down"></i></a></li>
+                    </ul>
+                </div>
+                <!-- Dropdown structure need initialize-->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="https://unsplash.com/" style="color:grey" target="blank">Unsplash</a></li>
+                        <li><a href="https://www.pexels.com/" style="color:grey" target="blank">Pexels</a></li>
+                        <li class="divider"></li>
+                        <li><a href="https://dribbble.com/" style="color:grey" target="blank">Dribble</a></li>
+                    </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1 class="center">Navbar</h1>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+        <!--Right Aligned -->
+        <h3>Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a <b>"right"</b> class to your <b>&ltul&gt</b> that contains them.</p>
+
+        <nav class ="indigo">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://www.figma.com/" class="brand-logo" target="blank"><i class="fa-brands fa-figma"></i>Figma</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://www.figma.com/design/" target="blank">Products</a></li>
+                        <li><a href="https://www.figma.com/enterprise/" target="blank">Overview</a></li>
+                        <li><a href="https://www.figma.com/templates/" target="blank">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Left Aligned-->
+        <br>
+        <h3>Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a <b>"left"</b> class to your <b>&ltul&gt</b> that contains them.</p>
+        <nav class ="indigo">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://www.figma.com/" class="brand-logo right" target="_blank"><i class="fa-brands fa-figma"></i>Figma</a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://www.figma.com/design/" target="blank">Products</a></li>
+                        <li><a href="https://www.figma.com/enterprise/" target="blank">Overview</a></li>
+                        <li><a href="https://www.figma.com/templates/" target="blank">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Centering Logo-->
+        <br>
+        <h3>Centering the Logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the "center" class to your <b>&lta class="brand-logo"&gt</b>. You will have to make sure yourself that links do not overlap if you use this.</p>
+
+        <nav class="pink">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://www.figma.com/" class="brand-logo center" target="blank"><i class="fa-brands fa-figma"></i>Figma</a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://www.figma.com/design/" target="blank">Products</a></li>
+                        <li><a href="https://www.figma.com/enterprise/" target="blank">Overview</a></li>
+                        <li><a href="https://www.figma.com/templates/" target="blank">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Active Items-->
+        <br>
+        <h3>Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+
+        <nav class="pink">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://www.figma.com/" class="brand-logo center" target="blank"><i class="fa-brands fa-figma"></i>Figma</a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://www.figma.com/design/" target="blank">Products</a></li>
+                        <li class="active"><a href="https://www.figma.com/enterprise/" target="blank">Overview</a></li>
+                        <li><a href="https://www.figma.com/templates/" target="blank">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Extended Navbar with tabs-->
+        <br>
+        <h3>Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class <b>"nav-extended"</b> to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        
+        <nav class="nav-extended blue">
+            <div class="container">
+                <div class=" nav-wrapper">
+                    <a href="https://www.figma.com/" class="brand-logo" target="blank"><i class="fa-brands fa-figma"></i>Figma</a>
+                    <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://www.figma.com/design/" target="blank">Products</a></li>
+                        <li><a href="https://www.figma.com/enterprise/" target="blank">Overview</a></li>
+                        <li><a href="https://www.figma.com/templates/" target="blank">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#Design1">Design 1</a></li>
+                        <li class="tab"><a href="#Design2">Design 2</a></li>
+                        <li class="tab disabled"><a href="#Design3" class="active">Design 3</a></li>
+                        <li class="tab"><a href="#Design4">Design 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Side Nav Content-->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="https://www.figma.com/design/" target="blank">Products</a></li>
+            <li><a href="https://www.figma.com/enterprise/" target="blank">Overview</a></li>
+            <li><a href="https://www.figma.com/templates/" target="blank">Resources</a></li>
+        </ul>
+        
+        <!-- Tabs Nav content-->
+        <div class="div row">
+            <!--Insert Card class-->
+            <div id="Design1" class="col s12">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="Images/navImg2.jpg" alt="" class="materialboxed responsive-img" data-caption="Material Box">
+                    </div>
+                </div>
+            </div>
+            <div id="Design2" class="col s12">
+                <div class="card">
+                    <div class="card-image">
+                        <div class="slider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="Images/navImg1.jpg" alt="" 
+                                    class="responsive-img">
+                                    <div class="caption left-align">
+                                        <h3 class="white-text"><b>Believe</b></h3> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="Images/navImg3.jpg" alt="" class="responsive-img">
+                                    <div class="caption center-align">
+                                        <h3 class="white-text"><b>In</b></h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="Images/navImg4.jpg" alt="" class="responsive-img">
+                                    <div class="caption right-align">
+                                        <h3 class="white-text"><b>Your</b></h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="Images/navImg5.jpg" alt="" class="responsive-img">
+                                    <div class="caption center-align">
+                                        <h1 class="white-text"><strong>SELF</strong></h1>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Design3" class="col s12" >Active (Tab is disabled)</div>
+            <div id="Design4" class="col s12">
+                <div class="card-image center-align">
+                    <figure>
+                        <img src="Images/navImg6.jpg" alt="" class="responsive-img">
+                        <figcaption><b>Philippians 4:13</b></figcaption>
+                        <figcaption><b>'I can do all things through Christ which strengtheneth me' </b></figcaption>
+                    </figure>                        
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed Navbar   1st line of body-->
+        <br>
+        <h3>Fixed Navbar</h3>
+        <p>To make the <b>"navbar fixed"</b>, you have to add an outer wrapping div with the class navbar-fixed. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.
+        </p>
+
+        <!-- Navbar Dropdown Menu (insert information to Navbar and content) 1st line of body-->
+        <br>
+        <h3>Navbar Dropdown Menu</h3>
+        <p>To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the <b>"data-target"</b> attribute of the dropdown trigger.</p>
+
+        <p>To activate the dropdown menu, insert this line of code into your JavaScript file, within the <b>$( document ).ready(function)</b> block</p>
+        <div class="card-panel">
+            <p>$(".dropdown-trigger").dropdown();</p>
+        </div>
+        <h5 class="black-text"><b>Trigger dropdown menu on click</b></h5>
+        <p>By default, the dropdown menu is activated by hovering over the dropdown trigger. To activate the dropdown menu on click, pass <b>{ hover: false }</b> into the above <b>dropdown()</b> function</p>
+
+        <!--Icon Links -->
+        <br>
+        <h3>Icon Links</h3>
+        <div>
+            <nav>
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="" class="brand-logo"><i class="fa-brands fa-github"></i>Logo</a> 
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href=""><i class="fa-brands fa-wordpress"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-apple"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-windows"></i></a></li>
+                        </ul>  
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <p>You can add icons into links. For icon only links you don't need any additional class. Just pop the <b>"i"</b> tag in and it will work.</p>
+        <div>
+            <nav>
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="" class="brand-logo"><i class="fa-brands fa-github"></i>Logo</a> 
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href=""><i class="fa-brands fa-searchengin left"></i>Search</a></li>
+                            <li><a href=""><i class="material-icons right">view_module</i>Module</a></li>
+                        </ul>  
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <p>For adding an icon to a text link you need to add either a <b>left or right</b> class to the icon depending on where you want the icon to be.</p>
+        
+        <!--Buttons-->
+        <br>
+        <h3>Buttons</h3>
+        <div>
+            <nav>
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="" class="brand-logo"><i class="fa-brands fa-github"></i>Logo</a> 
+                        <ul class="right hide-on-med-and-down">
+                            <li><a class="btn waves-effect waves-light">Button</a></li>
+                            <li><a class="btn waves-effect waves-light"><i class="material-icons right">cloud</i>Button</a></li>
+                            <li><a class="btn-large waves-effect waves-light">Large Button</a></li>
+                        </ul>  
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <p>You can add buttons into links. For buttons you don't need any additional class. Just pop the <b>'.btn'</b> class on the <b>'a'</b> tag.</p>
+        <br>
+        <h5 class="black-text"><b>Halfway FAB in Extended Navbar</b></h5>
+        <p>Add a halfway FAB to your extended navbar.</p>
+        <div>
+            <nav class="nav-extended">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="" class="brand-logo"><i class="fa-brands fa-github"></i>Logo</a> 
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="">A 1st link</a></li>
+                            <li><a href="">A 2nd link</a></li>
+                            <li><a href="">A 3rd link</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-content">
+                        <span class="nav-title">Title</span>
+                        <a href="" class="btn-floating btn-large halfway-fab waves-effect waves-light purple"><i class="fa-regular fa-face-laugh-wink"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--Search Bar-->
+        <br>
+        <h3>Search Bar</h3>
+        <div>
+            <nav>
+                <div class="nav-wrapper grey">
+                    <form>
+                        <div class="input-field">
+                            <input type="search" id="search" required>
+                            <label for="search" class="label-icon"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <p>You can add a search form in the navbar.</p>
+
+
+        <!--Mobile Collapse Button -->
+        <br>
+        <h3>Mobile Collapse Button</h3>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">Javascript</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>        
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+        <br>
+        <p>When your nav bar is resized, you will see that the links on the right turn into a hamburger icon <i class="material-icons">menu</i>. Take a look at the example below to get this functionality. Add the entire <b>sidenav-trigger</b> line to your <b>nav</b>.</p>
+        <h5 class="black-text"><b>Check the sample code in Extended Navbar</b></h5>
+        <br>
+        <h5 class="black-text"><b>Initialization</b></h5>
+        <p>After including the sidenav-trigger line into your navbar, all you have to do now initialize the plugin. This example below assumes you have not modified the classes in the above example. In the case that you have, just change the selector in the line below to match it.</p>
+        <div class="card-panel" style="padding: 0;">
+            <pre style="margin-left: 0;">
+                document.addEventListener('DOMContentLoaded', function() {
+                    var elems = document.querySelectorAll('.sidenav');
+                    var instances = M.Sidenav.init(elems, options);
+                });
+                    
+                // Or with jQuery
+                    
+                $(document).ready(function(){
+                    $('.sidenav').sidenav();
+                });
+            </pre>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div style="height: 100px"></div>
+
+    <!--to speed up efficient access from  other website-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Tabs Initialization Navbar -extension-->
+    <script>
+        $(document).ready(function() {
+            $('.tabs').tabs();
+        });
+    </script>
+    <!-- Side Nav initilization-->
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        })
+    </script>
+    <!-- Dropdown Initialize-->
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-trigger").dropdown(
+            );
+        })
+    </script>
+    <!-- Material Box Initialization-->
+    <script>
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+            // hover: false
+        });
+    </script>
+    <!-- Slider Initialization-->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slider({
+                interval: 3000,
+                indicators:true, //remove indicator boolean
+            });            
+        }) 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize the search input
+            const searchElement = document.querySelector('#search');
+            M.AutoInit(); // Initialize all Materialize components (optional)
+        });
+    </script>
+</body>
+</html>
